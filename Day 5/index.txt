@@ -1,0 +1,1685 @@
+> db.users.find({})
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3b"), "id" : 1, "movie_name" : "Bandolero!", "movie_genre" : "Western", "production_year" : 2008, "movie_budget" : "$18899.69" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3c"), "id" : 2, "movie_name" : "Yol (a.k.a. The Way)", "movie_genre" : "Drama", "production_year" : 2010, "movie_budget" : "$10734.74" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3d"), "id" : 3, "movie_name" : "Gangster No. 1", "movie_genre" : "Action|Crime|Thriller", "production_year" : 2007, "movie_budget" : "$13337.93" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3e"), "id" : 4, "movie_name" : "Love Object", "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller", "production_year" : 2006, "movie_budget" : "$11888.18" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3f"), "id" : 5, "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)", "movie_genre" : "Drama", "production_year" : 2003, "movie_budget" : "$14309.53" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f40"), "id" : 6, "movie_name" : "Mystery (Fu cheng mi shi)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2003, "movie_budget" : "$11350.64" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f41"), "id" : 7, "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)", "movie_genre" : "Drama", "production_year" : 2012, "movie_budget" : "$13010.80" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f42"), "id" : 8, "movie_name" : "Virus", "movie_genre" : "Horror|Sci-Fi", "production_year" : 2013, "movie_budget" : "$17768.51" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f43"), "id" : 9, "movie_name" : "Fourth Angel, The", "movie_genre" : "Action|Drama|Thriller", "production_year" : 2005, "movie_budget" : "$14133.66" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f44"), "id" : 10, "movie_name" : "Bugsy", "movie_genre" : "Crime|Drama", "production_year" : 2001, "movie_budget" : "$19128.01" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f45"), "id" : 11, "movie_name" : "How to Stuff a Wild Bikini", "movie_genre" : "Comedy", "production_year" : 2009, "movie_budget" : "$14661.92" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f46"), "id" : 12, "movie_name" : "Tropic Thunder", "movie_genre" : "Action|Adventure|Comedy|War", "production_year" : 1998, "movie_budget" : "$11301.89" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f47"), "id" : 13, "movie_name" : "Death to Smoochy", "movie_genre" : "Comedy|Crime|Drama", "production_year" : 2005, "movie_budget" : "$12720.15" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f48"), "id" : 14, "movie_name" : "Dark Island", "movie_genre" : "Action|Sci-Fi|Thriller", "production_year" : 2004, "movie_budget" : "$19464.67" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f49"), "id" : 15, "movie_name" : "Ruling Class, The", "movie_genre" : "Comedy|Drama", "production_year" : 2003, "movie_budget" : "$18664.27" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4a"), "id" : 16, "movie_name" : "Saw VII 3D - The Final Chapter", "movie_genre" : "Horror|Mystery|Thriller", "production_year" : 2011, "movie_budget" : "$9766.97" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4b"), "id" : 17, "movie_name" : "Wings of the Dove, The", "movie_genre" : "Drama|Romance", "production_year" : 2000, "movie_budget" : "$16159.90" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4c"), "id" : 18, "movie_name" : "Rage", "movie_genre" : "Drama", "production_year" : 1993, "movie_budget" : "$18128.93" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4d"), "id" : 19, "movie_name" : "Cop Out", "movie_genre" : "Action|Comedy|Crime", "production_year" : 2002, "movie_budget" : "$19343.21" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4e"), "id" : 20, "movie_name" : "P.S.", "movie_genre" : "Comedy|Drama|Fantasy|Romance", "production_year" : 2006, "movie_budget" : "$18860.82" }
+Type "it" for more
+> db.users.find({movie_name:{$eq:"movie_name"}}).pretty()
+> db.users.find({movie_name:{$ne:"movie_name"}}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3d"),
+        "id" : 3,
+        "movie_name" : "Gangster No. 1",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2007,
+        "movie_budget" : "$13337.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3f"),
+        "id" : 5,
+        "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$14309.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f41"),
+        "id" : 7,
+        "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$13010.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f43"),
+        "id" : 9,
+        "movie_name" : "Fourth Angel, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2005,
+        "movie_budget" : "$14133.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f45"),
+        "id" : 11,
+        "movie_name" : "How to Stuff a Wild Bikini",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "movie_budget" : "$14661.92"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f46"),
+        "id" : 12,
+        "movie_name" : "Tropic Thunder",
+        "movie_genre" : "Action|Adventure|Comedy|War",
+        "production_year" : 1998,
+        "movie_budget" : "$11301.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f47"),
+        "id" : 13,
+        "movie_name" : "Death to Smoochy",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$12720.15"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4a"),
+        "id" : 16,
+        "movie_name" : "Saw VII 3D - The Final Chapter",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2011,
+        "movie_budget" : "$9766.97"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4b"),
+        "id" : 17,
+        "movie_name" : "Wings of the Dove, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "movie_budget" : "$16159.90"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4c"),
+        "id" : 18,
+        "movie_name" : "Rage",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "movie_budget" : "$18128.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+Type "it" for more
+> db.users.find({movie_budget:{$gte:"$16000"}}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4a"),
+        "id" : 16,
+        "movie_name" : "Saw VII 3D - The Final Chapter",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2011,
+        "movie_budget" : "$9766.97"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4b"),
+        "id" : 17,
+        "movie_name" : "Wings of the Dove, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "movie_budget" : "$16159.90"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4c"),
+        "id" : 18,
+        "movie_name" : "Rage",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "movie_budget" : "$18128.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4f"),
+        "id" : 21,
+        "movie_name" : "Love Bug, The",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "movie_budget" : "$17870.22"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f50"),
+        "id" : 22,
+        "movie_name" : "So Big!",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "movie_budget" : "$19051.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f51"),
+        "id" : 23,
+        "movie_name" : "House Is Black, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "movie_budget" : "$17100.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f53"),
+        "id" : 25,
+        "movie_name" : "Passing Fancy (Dekigokoro)",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "movie_budget" : "$17660.20"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f56"),
+        "id" : 28,
+        "movie_name" : "My Bloody Valentine",
+        "movie_genre" : "Drama|Horror|Thriller",
+        "production_year" : 1988,
+        "movie_budget" : "$16308.45"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f59"),
+        "id" : 31,
+        "movie_name" : "Scrooged",
+        "movie_genre" : "Comedy|Fantasy|Romance",
+        "production_year" : 1995,
+        "movie_budget" : "$18436.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5a"),
+        "id" : 32,
+        "movie_name" : "Great Mouse Detective, The",
+        "movie_genre" : "Action|Animation|Children|Crime",
+        "production_year" : 1993,
+        "movie_budget" : "$18892.19"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5b"),
+        "id" : 33,
+        "movie_name" : "House (Hausu)",
+        "movie_genre" : "Comedy|Fantasy|Horror",
+        "production_year" : 1996,
+        "movie_budget" : "$18277.16"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5c"),
+        "id" : 34,
+        "movie_name" : "Warrendale",
+        "movie_genre" : "Documentary",
+        "production_year" : 1986,
+        "movie_budget" : "$17763.19"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5d"),
+        "id" : 35,
+        "movie_name" : "Haunted Palace, The",
+        "movie_genre" : "Horror",
+        "production_year" : 1991,
+        "movie_budget" : "$17362.66"
+}
+Type "it" for more
+> db.users.find({movie_budget:{$lte:"$12000"}}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f46"),
+        "id" : 12,
+        "movie_name" : "Tropic Thunder",
+        "movie_genre" : "Action|Adventure|Comedy|War",
+        "production_year" : 1998,
+        "movie_budget" : "$11301.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f52"),
+        "id" : 24,
+        "movie_name" : "Christmas Carol, A",
+        "movie_genre" : "Animation|Children|Drama|Fantasy|IMAX",
+        "production_year" : 2002,
+        "movie_budget" : "$11321.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5f"),
+        "id" : 37,
+        "movie_name" : "Robinson Crusoe (Daniel Defoe's Robinson Crusoe)",
+        "movie_genre" : "Adventure|Drama",
+        "production_year" : 1995,
+        "movie_budget" : "$11213.50"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f63"),
+        "id" : 41,
+        "movie_name" : "Blue Denim",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "movie_budget" : "$10790.52"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f64"),
+        "id" : 42,
+        "movie_name" : "One-Armed Swordsman, The (Dubei dao)",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 1990,
+        "movie_budget" : "$11353.40"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f66"),
+        "id" : 44,
+        "movie_name" : "City Under Siege (Chun sing gai bei)",
+        "movie_genre" : "Action|Sci-Fi",
+        "production_year" : 1992,
+        "movie_budget" : "$11299.91"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f6b"),
+        "id" : 49,
+        "movie_name" : "Gypsy",
+        "movie_genre" : "Comedy|Drama|Musical",
+        "production_year" : 1992,
+        "movie_budget" : "$10858.76"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f6e"),
+        "id" : 52,
+        "movie_name" : "Watch on the Rhine",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "movie_budget" : "$11601.59"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f71"),
+        "id" : 55,
+        "movie_name" : "L'enfance nue (Naked Childhood)",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$10845.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f72"),
+        "id" : 56,
+        "movie_name" : "Frank and Ollie",
+        "movie_genre" : "Documentary",
+        "production_year" : 1996,
+        "movie_budget" : "$10742.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f7d"),
+        "id" : 67,
+        "movie_name" : "Me tulemme taas",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1991,
+        "movie_budget" : "$10132.41"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f82"),
+        "id" : 72,
+        "movie_name" : "Cabin Fever: Patient Zero",
+        "movie_genre" : "Horror|Sci-Fi|Thriller",
+        "production_year" : 2012,
+        "movie_budget" : "$11853.88"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f84"),
+        "id" : 74,
+        "movie_name" : "Woman, a Gun and a Noodle Shop, A (San qiang pai an jing qi)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2011,
+        "movie_budget" : "$11723.42"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f8b"),
+        "id" : 81,
+        "movie_name" : "O Lucky Man!",
+        "movie_genre" : "Comedy|Drama|Fantasy|Musical",
+        "production_year" : 2000,
+        "movie_budget" : "$11057.94"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f94"),
+        "id" : 90,
+        "movie_name" : "Stormbreaker (Alex Rider: Operation Stormbreaker)",
+        "movie_genre" : "Action|Children",
+        "production_year" : 2006,
+        "movie_budget" : "$11402.78"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f9a"),
+        "id" : 96,
+        "movie_name" : "Shoulder Arms",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1984,
+        "movie_budget" : "$11001.85"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fa2"),
+        "id" : 104,
+        "movie_name" : "Music and Lyrics",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1997,
+        "movie_budget" : "$11222.91"
+}
+Type "it" for more
+> db.users.find({$and:[{production_year:{$lt:2000}},{movie_budget:{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f46"),
+        "id" : 12,
+        "movie_name" : "Tropic Thunder",
+        "movie_genre" : "Action|Adventure|Comedy|War",
+        "production_year" : 1998,
+        "movie_budget" : "$11301.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4c"),
+        "id" : 18,
+        "movie_name" : "Rage",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "movie_budget" : "$18128.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4f"),
+        "id" : 21,
+        "movie_name" : "Love Bug, The",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "movie_budget" : "$17870.22"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f50"),
+        "id" : 22,
+        "movie_name" : "So Big!",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "movie_budget" : "$19051.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f51"),
+        "id" : 23,
+        "movie_name" : "House Is Black, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "movie_budget" : "$17100.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f53"),
+        "id" : 25,
+        "movie_name" : "Passing Fancy (Dekigokoro)",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "movie_budget" : "$17660.20"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f54"),
+        "id" : 26,
+        "movie_name" : "Fighting Spirit, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "movie_budget" : "$12678.40"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f56"),
+        "id" : 28,
+        "movie_name" : "My Bloody Valentine",
+        "movie_genre" : "Drama|Horror|Thriller",
+        "production_year" : 1988,
+        "movie_budget" : "$16308.45"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f57"),
+        "id" : 29,
+        "movie_name" : "Kid, The",
+        "movie_genre" : "Comedy|Fantasy",
+        "production_year" : 1967,
+        "movie_budget" : "$12801.20"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f58"),
+        "id" : 30,
+        "movie_name" : "47 Ronin",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "movie_budget" : "$12876.70"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f59"),
+        "id" : 31,
+        "movie_name" : "Scrooged",
+        "movie_genre" : "Comedy|Fantasy|Romance",
+        "production_year" : 1995,
+        "movie_budget" : "$18436.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5a"),
+        "id" : 32,
+        "movie_name" : "Great Mouse Detective, The",
+        "movie_genre" : "Action|Animation|Children|Crime",
+        "production_year" : 1993,
+        "movie_budget" : "$18892.19"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5b"),
+        "id" : 33,
+        "movie_name" : "House (Hausu)",
+        "movie_genre" : "Comedy|Fantasy|Horror",
+        "production_year" : 1996,
+        "movie_budget" : "$18277.16"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5c"),
+        "id" : 34,
+        "movie_name" : "Warrendale",
+        "movie_genre" : "Documentary",
+        "production_year" : 1986,
+        "movie_budget" : "$17763.19"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5d"),
+        "id" : 35,
+        "movie_name" : "Haunted Palace, The",
+        "movie_genre" : "Horror",
+        "production_year" : 1991,
+        "movie_budget" : "$17362.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5e"),
+        "id" : 36,
+        "movie_name" : "Barbary Coast Gent (Gold Town) (Honest Thief, The)",
+        "movie_genre" : "Comedy|Western",
+        "production_year" : 1995,
+        "movie_budget" : "$19602.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5f"),
+        "id" : 37,
+        "movie_name" : "Robinson Crusoe (Daniel Defoe's Robinson Crusoe)",
+        "movie_genre" : "Adventure|Drama",
+        "production_year" : 1995,
+        "movie_budget" : "$11213.50"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f60"),
+        "id" : 38,
+        "movie_name" : "Budrus",
+        "movie_genre" : "Documentary",
+        "production_year" : 1966,
+        "movie_budget" : "$13384.44"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f61"),
+        "id" : 39,
+        "movie_name" : "Sunfish, The (Klumpfisken)",
+        "movie_genre" : "Drama",
+        "production_year" : 1987,
+        "movie_budget" : "$19024.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f64"),
+        "id" : 42,
+        "movie_name" : "One-Armed Swordsman, The (Dubei dao)",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 1990,
+        "movie_budget" : "$11353.40"
+}
+Type "it" for more
+> db.users.find({$and:[{production_year:{$gt:2000}},{movie_budget:{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3d"),
+        "id" : 3,
+        "movie_name" : "Gangster No. 1",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2007,
+        "movie_budget" : "$13337.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3f"),
+        "id" : 5,
+        "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$14309.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f41"),
+        "id" : 7,
+        "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$13010.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f43"),
+        "id" : 9,
+        "movie_name" : "Fourth Angel, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2005,
+        "movie_budget" : "$14133.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f45"),
+        "id" : 11,
+        "movie_name" : "How to Stuff a Wild Bikini",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "movie_budget" : "$14661.92"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f47"),
+        "id" : 13,
+        "movie_name" : "Death to Smoochy",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$12720.15"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4a"),
+        "id" : 16,
+        "movie_name" : "Saw VII 3D - The Final Chapter",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2011,
+        "movie_budget" : "$9766.97"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f52"),
+        "id" : 24,
+        "movie_name" : "Christmas Carol, A",
+        "movie_genre" : "Animation|Children|Drama|Fantasy|IMAX",
+        "production_year" : 2002,
+        "movie_budget" : "$11321.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f55"),
+        "id" : 27,
+        "movie_name" : "Princess Blade, The (Shura Yukihime)",
+        "movie_genre" : "Action|Sci-Fi",
+        "production_year" : 2008,
+        "movie_budget" : "$12749.87"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f62"),
+        "id" : 40,
+        "movie_name" : "Hotel for Dogs",
+        "movie_genre" : "Adventure|Children|Comedy",
+        "production_year" : 2011,
+        "movie_budget" : "$14719.51"
+}
+Type "it" for more
+> db.users.find({$or:[{production_year:{$gt:2000}},{movie_budget:{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3d"),
+        "id" : 3,
+        "movie_name" : "Gangster No. 1",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2007,
+        "movie_budget" : "$13337.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3f"),
+        "id" : 5,
+        "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$14309.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f41"),
+        "id" : 7,
+        "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$13010.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f43"),
+        "id" : 9,
+        "movie_name" : "Fourth Angel, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2005,
+        "movie_budget" : "$14133.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f45"),
+        "id" : 11,
+        "movie_name" : "How to Stuff a Wild Bikini",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "movie_budget" : "$14661.92"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f46"),
+        "id" : 12,
+        "movie_name" : "Tropic Thunder",
+        "movie_genre" : "Action|Adventure|Comedy|War",
+        "production_year" : 1998,
+        "movie_budget" : "$11301.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f47"),
+        "id" : 13,
+        "movie_name" : "Death to Smoochy",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$12720.15"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4a"),
+        "id" : 16,
+        "movie_name" : "Saw VII 3D - The Final Chapter",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2011,
+        "movie_budget" : "$9766.97"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4b"),
+        "id" : 17,
+        "movie_name" : "Wings of the Dove, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "movie_budget" : "$16159.90"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4c"),
+        "id" : 18,
+        "movie_name" : "Rage",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "movie_budget" : "$18128.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+Type "it" for more
+> db.users.find({$nor:[{production_year:{$lt:2000}},{movie_budget:{$lt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3d"),
+        "id" : 3,
+        "movie_name" : "Gangster No. 1",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2007,
+        "movie_budget" : "$13337.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3f"),
+        "id" : 5,
+        "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$14309.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f41"),
+        "id" : 7,
+        "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$13010.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f43"),
+        "id" : 9,
+        "movie_name" : "Fourth Angel, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2005,
+        "movie_budget" : "$14133.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f45"),
+        "id" : 11,
+        "movie_name" : "How to Stuff a Wild Bikini",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "movie_budget" : "$14661.92"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f47"),
+        "id" : 13,
+        "movie_name" : "Death to Smoochy",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$12720.15"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4a"),
+        "id" : 16,
+        "movie_name" : "Saw VII 3D - The Final Chapter",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2011,
+        "movie_budget" : "$9766.97"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4b"),
+        "id" : 17,
+        "movie_name" : "Wings of the Dove, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "movie_budget" : "$16159.90"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f52"),
+        "id" : 24,
+        "movie_name" : "Christmas Carol, A",
+        "movie_genre" : "Animation|Children|Drama|Fantasy|IMAX",
+        "production_year" : 2002,
+        "movie_budget" : "$11321.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f55"),
+        "id" : 27,
+        "movie_name" : "Princess Blade, The (Shura Yukihime)",
+        "movie_genre" : "Action|Sci-Fi",
+        "production_year" : 2008,
+        "movie_budget" : "$12749.87"
+}
+Type "it" for more
+> db.users.find({$nor:[{production_year:{$gt:2000}},{movie_budget:{$gt:"$10000"}}]}).pretty()
+> db.users.find({$nor:[{production_year:{$gt:2000}},{movie_budget:{$gt:"$10000"}}]}).pretty()
+> db.users.find({$nor:[{production_year:{$gt:2000}},{movie_budget:{$gt:"$12000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f46"),
+        "id" : 12,
+        "movie_name" : "Tropic Thunder",
+        "movie_genre" : "Action|Adventure|Comedy|War",
+        "production_year" : 1998,
+        "movie_budget" : "$11301.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f5f"),
+        "id" : 37,
+        "movie_name" : "Robinson Crusoe (Daniel Defoe's Robinson Crusoe)",
+        "movie_genre" : "Adventure|Drama",
+        "production_year" : 1995,
+        "movie_budget" : "$11213.50"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f64"),
+        "id" : 42,
+        "movie_name" : "One-Armed Swordsman, The (Dubei dao)",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 1990,
+        "movie_budget" : "$11353.40"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f66"),
+        "id" : 44,
+        "movie_name" : "City Under Siege (Chun sing gai bei)",
+        "movie_genre" : "Action|Sci-Fi",
+        "production_year" : 1992,
+        "movie_budget" : "$11299.91"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f6b"),
+        "id" : 49,
+        "movie_name" : "Gypsy",
+        "movie_genre" : "Comedy|Drama|Musical",
+        "production_year" : 1992,
+        "movie_budget" : "$10858.76"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f6e"),
+        "id" : 52,
+        "movie_name" : "Watch on the Rhine",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "movie_budget" : "$11601.59"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f72"),
+        "id" : 56,
+        "movie_name" : "Frank and Ollie",
+        "movie_genre" : "Documentary",
+        "production_year" : 1996,
+        "movie_budget" : "$10742.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f7d"),
+        "id" : 67,
+        "movie_name" : "Me tulemme taas",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1991,
+        "movie_budget" : "$10132.41"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f8b"),
+        "id" : 81,
+        "movie_name" : "O Lucky Man!",
+        "movie_genre" : "Comedy|Drama|Fantasy|Musical",
+        "production_year" : 2000,
+        "movie_budget" : "$11057.94"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f9a"),
+        "id" : 96,
+        "movie_name" : "Shoulder Arms",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1984,
+        "movie_budget" : "$11001.85"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fa2"),
+        "id" : 104,
+        "movie_name" : "Music and Lyrics",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1997,
+        "movie_budget" : "$11222.91"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fb1"),
+        "id" : 119,
+        "movie_name" : "Alice's Adventures in Wonderland",
+        "movie_genre" : "Adventure|Children|Fantasy|Musical",
+        "production_year" : 1994,
+        "movie_budget" : "$10694.89"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fb2"),
+        "id" : 120,
+        "movie_name" : "One Piece Film: Strong World",
+        "movie_genre" : "Action|Adventure|Animation|Comedy|Fantasy",
+        "production_year" : 1996,
+        "movie_budget" : "$10353.65"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fcb"),
+        "id" : 145,
+        "movie_name" : "Germinal",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1996,
+        "movie_budget" : "$11722.88"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fe6"),
+        "id" : 172,
+        "movie_name" : "Derrida",
+        "movie_genre" : "Documentary",
+        "production_year" : 1964,
+        "movie_budget" : "$10126.87"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fe9"),
+        "id" : 175,
+        "movie_name" : "Puppet Master II",
+        "movie_genre" : "Horror|Sci-Fi|Thriller",
+        "production_year" : 1987,
+        "movie_budget" : "$10835.52"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fec"),
+        "id" : 178,
+        "movie_name" : "Blood on the Moon",
+        "movie_genre" : "Action|Drama|Western",
+        "production_year" : 1995,
+        "movie_budget" : "$11366.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9ff0"),
+        "id" : 182,
+        "movie_name" : "Three Men and a Baby",
+        "movie_genre" : "Comedy",
+        "production_year" : 1999,
+        "movie_budget" : "$11734.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca001"),
+        "id" : 199,
+        "movie_name" : "Haunted Castle, The (Schloß Vogeloed)",
+        "movie_genre" : "Crime|Drama|Horror|Mystery",
+        "production_year" : 1993,
+        "movie_budget" : "$11141.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca006"),
+        "id" : 204,
+        "movie_name" : "Sands of Iwo Jima",
+        "movie_genre" : "Action|Drama|Romance|War",
+        "production_year" : 1999,
+        "movie_budget" : "$10380.27"
+}
+Type "it" for more
+> db.users.find({$and:{[{production_year:{$gte:2000}},{production_year:{$lte:2010}}]}).pretty()
+...
+...
+> db.users.find({$and:{[{production_year:{$lte:2000}},{production_year:{$gte:2010}}]}).pretty()
+...
+...
+> db.users.find({$or:[{production_year:{$ne:2000}},{movie_budget:{$lt:10000}}]})
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3b"), "id" : 1, "movie_name" : "Bandolero!", "movie_genre" : "Western", "production_year" : 2008, "movie_budget" : "$18899.69" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3c"), "id" : 2, "movie_name" : "Yol (a.k.a. The Way)", "movie_genre" : "Drama", "production_year" : 2010, "movie_budget" : "$10734.74" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3d"), "id" : 3, "movie_name" : "Gangster No. 1", "movie_genre" : "Action|Crime|Thriller", "production_year" : 2007, "movie_budget" : "$13337.93" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3e"), "id" : 4, "movie_name" : "Love Object", "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller", "production_year" : 2006, "movie_budget" : "$11888.18" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f3f"), "id" : 5, "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)", "movie_genre" : "Drama", "production_year" : 2003, "movie_budget" : "$14309.53" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f40"), "id" : 6, "movie_name" : "Mystery (Fu cheng mi shi)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2003, "movie_budget" : "$11350.64" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f41"), "id" : 7, "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)", "movie_genre" : "Drama", "production_year" : 2012, "movie_budget" : "$13010.80" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f42"), "id" : 8, "movie_name" : "Virus", "movie_genre" : "Horror|Sci-Fi", "production_year" : 2013, "movie_budget" : "$17768.51" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f43"), "id" : 9, "movie_name" : "Fourth Angel, The", "movie_genre" : "Action|Drama|Thriller", "production_year" : 2005, "movie_budget" : "$14133.66" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f44"), "id" : 10, "movie_name" : "Bugsy", "movie_genre" : "Crime|Drama", "production_year" : 2001, "movie_budget" : "$19128.01" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f45"), "id" : 11, "movie_name" : "How to Stuff a Wild Bikini", "movie_genre" : "Comedy", "production_year" : 2009, "movie_budget" : "$14661.92" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f46"), "id" : 12, "movie_name" : "Tropic Thunder", "movie_genre" : "Action|Adventure|Comedy|War", "production_year" : 1998, "movie_budget" : "$11301.89" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f47"), "id" : 13, "movie_name" : "Death to Smoochy", "movie_genre" : "Comedy|Crime|Drama", "production_year" : 2005, "movie_budget" : "$12720.15" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f48"), "id" : 14, "movie_name" : "Dark Island", "movie_genre" : "Action|Sci-Fi|Thriller", "production_year" : 2004, "movie_budget" : "$19464.67" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f49"), "id" : 15, "movie_name" : "Ruling Class, The", "movie_genre" : "Comedy|Drama", "production_year" : 2003, "movie_budget" : "$18664.27" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4a"), "id" : 16, "movie_name" : "Saw VII 3D - The Final Chapter", "movie_genre" : "Horror|Mystery|Thriller", "production_year" : 2011, "movie_budget" : "$9766.97" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4c"), "id" : 18, "movie_name" : "Rage", "movie_genre" : "Drama", "production_year" : 1993, "movie_budget" : "$18128.93" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4d"), "id" : 19, "movie_name" : "Cop Out", "movie_genre" : "Action|Comedy|Crime", "production_year" : 2002, "movie_budget" : "$19343.21" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4e"), "id" : 20, "movie_name" : "P.S.", "movie_genre" : "Comedy|Drama|Fantasy|Romance", "production_year" : 2006, "movie_budget" : "$18860.82" }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f4f"), "id" : 21, "movie_name" : "Love Bug, The", "movie_genre" : "Children|Comedy", "production_year" : 1990, "movie_budget" : "$17870.22" }
+Type "it" for more
+> db.users.find({production_year:{$in:[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010]}}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3b"),
+        "id" : 1,
+        "movie_name" : "Bandolero!",
+        "movie_genre" : "Western",
+        "production_year" : 2008,
+        "movie_budget" : "$18899.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3c"),
+        "id" : 2,
+        "movie_name" : "Yol (a.k.a. The Way)",
+        "movie_genre" : "Drama",
+        "production_year" : 2010,
+        "movie_budget" : "$10734.74"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3d"),
+        "id" : 3,
+        "movie_name" : "Gangster No. 1",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2007,
+        "movie_budget" : "$13337.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3e"),
+        "id" : 4,
+        "movie_name" : "Love Object",
+        "movie_genre" : "Comedy|Drama|Horror|Romance|Thriller",
+        "production_year" : 2006,
+        "movie_budget" : "$11888.18"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f3f"),
+        "id" : 5,
+        "movie_name" : "Will It Snow For Christmas? (Y'aura-t-il de la neige à Noël?)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$14309.53"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f40"),
+        "id" : 6,
+        "movie_name" : "Mystery (Fu cheng mi shi)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2003,
+        "movie_budget" : "$11350.64"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f43"),
+        "id" : 9,
+        "movie_name" : "Fourth Angel, The",
+        "movie_genre" : "Action|Drama|Thriller",
+        "production_year" : 2005,
+        "movie_budget" : "$14133.66"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f44"),
+        "id" : 10,
+        "movie_name" : "Bugsy",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2001,
+        "movie_budget" : "$19128.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f45"),
+        "id" : 11,
+        "movie_name" : "How to Stuff a Wild Bikini",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "movie_budget" : "$14661.92"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f47"),
+        "id" : 13,
+        "movie_name" : "Death to Smoochy",
+        "movie_genre" : "Comedy|Crime|Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$12720.15"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f48"),
+        "id" : 14,
+        "movie_name" : "Dark Island",
+        "movie_genre" : "Action|Sci-Fi|Thriller",
+        "production_year" : 2004,
+        "movie_budget" : "$19464.67"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f49"),
+        "id" : 15,
+        "movie_name" : "Ruling Class, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2003,
+        "movie_budget" : "$18664.27"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4b"),
+        "id" : 17,
+        "movie_name" : "Wings of the Dove, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "movie_budget" : "$16159.90"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4d"),
+        "id" : 19,
+        "movie_name" : "Cop Out",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 2002,
+        "movie_budget" : "$19343.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f4e"),
+        "id" : 20,
+        "movie_name" : "P.S.",
+        "movie_genre" : "Comedy|Drama|Fantasy|Romance",
+        "production_year" : 2006,
+        "movie_budget" : "$18860.82"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f52"),
+        "id" : 24,
+        "movie_name" : "Christmas Carol, A",
+        "movie_genre" : "Animation|Children|Drama|Fantasy|IMAX",
+        "production_year" : 2002,
+        "movie_budget" : "$11321.62"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f55"),
+        "id" : 27,
+        "movie_name" : "Princess Blade, The (Shura Yukihime)",
+        "movie_genre" : "Action|Sci-Fi",
+        "production_year" : 2008,
+        "movie_budget" : "$12749.87"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f63"),
+        "id" : 41,
+        "movie_name" : "Blue Denim",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "movie_budget" : "$10790.52"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f65"),
+        "id" : 43,
+        "movie_name" : "Effect of Gamma Rays on Man-in-the-Moon Marigolds, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "movie_budget" : "$17449.75"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f67"),
+        "id" : 45,
+        "movie_name" : "American Mullet",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "movie_budget" : "$9326.42"
+}
+Type "it" for more
+> db.users.find({}).sort({production_year:-1,movie_name:-1}).pretty()
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f42"),
+        "id" : 8,
+        "movie_name" : "Virus",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 2013,
+        "movie_budget" : "$17768.51"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca0ce"),
+        "id" : 404,
+        "movie_name" : "Skirt Day (La journée de la jupe)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "movie_budget" : "$18962.81"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca0c3"),
+        "id" : 393,
+        "movie_name" : "Ripley's Game",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2013,
+        "movie_budget" : "$15971.76"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fc0"),
+        "id" : 134,
+        "movie_name" : "Jekyll + Hyde",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2013,
+        "movie_budget" : "$19488.23"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca102"),
+        "id" : 456,
+        "movie_name" : "Burglar",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 2013,
+        "movie_budget" : "$19490.72"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca10f"),
+        "id" : 469,
+        "movie_name" : "Zombie Strippers!",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 2012,
+        "movie_budget" : "$13134.42"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca021"),
+        "id" : 231,
+        "movie_name" : "Tribute",
+        "movie_genre" : "Drama|Mystery|Romance",
+        "production_year" : 2012,
+        "movie_budget" : "$16362.65"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca030"),
+        "id" : 246,
+        "movie_name" : "The Incite Mill - 7 Day Death Game",
+        "movie_genre" : "Horror|Mystery|Thriller",
+        "production_year" : 2012,
+        "movie_budget" : "$19102.01"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca01b"),
+        "id" : 225,
+        "movie_name" : "The Adventures of Tartu",
+        "movie_genre" : "Drama|Romance|Thriller|War",
+        "production_year" : 2012,
+        "movie_budget" : "$9660.21"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca0c7"),
+        "id" : 397,
+        "movie_name" : "Synchromy",
+        "movie_genre" : "Animation",
+        "production_year" : 2012,
+        "movie_budget" : "$17407.36"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca120"),
+        "id" : 486,
+        "movie_name" : "Star Trek: Insurrection",
+        "movie_genre" : "Action|Drama|Romance|Sci-Fi",
+        "production_year" : 2012,
+        "movie_budget" : "$14641.69"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f9c"),
+        "id" : 98,
+        "movie_name" : "Song of the South",
+        "movie_genre" : "Adventure|Animation|Children|Musical",
+        "production_year" : 2012,
+        "movie_budget" : "$18797.86"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca062"),
+        "id" : 296,
+        "movie_name" : "Six in Paris (Paris vu par...)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2012,
+        "movie_budget" : "$9153.29"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f41"),
+        "id" : 7,
+        "movie_name" : "Secrets of a Soul (Geheimnisse einer Seele)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$13010.80"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9f6d"),
+        "id" : 51,
+        "movie_name" : "Return to Salem's Lot, A",
+        "movie_genre" : "Horror",
+        "production_year" : 2012,
+        "movie_budget" : "$16905.63"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca025"),
+        "id" : 235,
+        "movie_name" : "Pistol Whipped",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$10169.31"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca026"),
+        "id" : 236,
+        "movie_name" : "Mugger, The (El asaltante)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$9196.72"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acc9fe8"),
+        "id" : 174,
+        "movie_name" : "Life After Beth",
+        "movie_genre" : "Comedy|Horror|Romance",
+        "production_year" : 2012,
+        "movie_budget" : "$9504.82"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca0c5"),
+        "id" : 395,
+        "movie_name" : "Leo's Room (Cuarto de Leo, El)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$18478.93"
+}
+{
+        "_id" : ObjectId("6228bd96a5d60c680acca125"),
+        "id" : 491,
+        "movie_name" : "Joyless Street, The (Die freudlose Gasse)",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "movie_budget" : "$14952.80"
+}
+Type "it" for more
+> db.users.find({},{production_year:2010}).skip(10).limit(5).pretty()
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f45"), "production_year" : 2009 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f46"), "production_year" : 1998 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f47"), "production_year" : 2005 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f48"), "production_year" : 2004 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f49"), "production_year" : 2003 }
+> db.users.find({},{production_year:2009}).skip(10).limit(5).pretty()
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f45"), "production_year" : 2009 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f46"), "production_year" : 1998 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f47"), "production_year" : 2005 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f48"), "production_year" : 2004 }
+{ "_id" : ObjectId("6228bd96a5d60c680acc9f49"), "production_year" : 2003 }
