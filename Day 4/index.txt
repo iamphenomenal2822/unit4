@@ -1,0 +1,577 @@
+db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34})
+WriteResult({ "nInserted" : 1 })
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62263efb27d0764f2cc16a38"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2527d0764f2cc16a39"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2827d0764f2cc16a3a"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2927d0764f2cc16a3b"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2a27d0764f2cc16a3c"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2b27d0764f2cc16a3d"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2c27d0764f2cc16a3e"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2d27d0764f2cc16a3f"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a40"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a41"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a42"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a43"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3127d0764f2cc16a44"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+> db.users.insertMany([{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34},{"first_name":"Leo","last_name":"Messi","email":"leomessi10@gmail.com","gender":"male","ip_address":123,"age":34}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62263fcf27d0764f2cc16a45"),
+                ObjectId("62263fcf27d0764f2cc16a46"),
+                ObjectId("62263fcf27d0764f2cc16a47"),
+                ObjectId("62263fcf27d0764f2cc16a48"),
+                ObjectId("62263fcf27d0764f2cc16a49"),
+                ObjectId("62263fcf27d0764f2cc16a4a"),
+                ObjectId("62263fcf27d0764f2cc16a4b"),
+                ObjectId("62263fcf27d0764f2cc16a4c"),
+                ObjectId("62263fcf27d0764f2cc16a4d"),
+                ObjectId("62263fcf27d0764f2cc16a4e")
+        ]
+}
+> db.users.findOne({"_id":ObjectId("62263fcf27d0764f2cc16a45")})
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a45"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+> db.users.update({"first_name":"Leo"},{$set:{"city":"Paris"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({"first_name"}).pretty()
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:27
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62263efb27d0764f2cc16a38"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "city" : "Paris"
+}
+{
+        "_id" : ObjectId("62263f2527d0764f2cc16a39"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2827d0764f2cc16a3a"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2927d0764f2cc16a3b"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2a27d0764f2cc16a3c"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2b27d0764f2cc16a3d"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2c27d0764f2cc16a3e"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2d27d0764f2cc16a3f"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a40"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a41"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a42"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a43"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263f3127d0764f2cc16a44"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a45"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a46"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a47"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a48"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a49"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a4a"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a4b"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34
+}
+Type "it" for more
+> db.users.updateMany({"age":34},{$set:{"nick_name":"GOAT"}})
+{ "acknowledged" : true, "matchedCount" : 23, "modifiedCount" : 23 }
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62263efb27d0764f2cc16a38"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "city" : "Paris",
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2527d0764f2cc16a39"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2827d0764f2cc16a3a"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2927d0764f2cc16a3b"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2a27d0764f2cc16a3c"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2b27d0764f2cc16a3d"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2c27d0764f2cc16a3e"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2d27d0764f2cc16a3f"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a40"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f2f27d0764f2cc16a41"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a42"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f3027d0764f2cc16a43"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263f3127d0764f2cc16a44"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a45"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a46"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a47"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a48"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a49"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a4a"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+{
+        "_id" : ObjectId("62263fcf27d0764f2cc16a4b"),
+        "first_name" : "Leo",
+        "last_name" : "Messi",
+        "email" : "leomessi10@gmail.com",
+        "gender" : "male",
+        "ip_address" : 123,
+        "age" : 34,
+        "nick_name" : "GOAT"
+}
+Type "it" for more
+> db.users.remove({"ip_address"})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:29
+> db.users.remove({"ip_address"})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:29
+> db.users.remove({"ip_address":123})
+WriteResult({ "nRemoved" : 23 })
+> db.users.find({})
+> db.users.find({}).pretty()
+> db.users.deleteOne({"email":"leomessi10@gmail.com"})
+{ "acknowledged" : true, "deletedCount" : 0 }
+> db.users.find({})
+>
